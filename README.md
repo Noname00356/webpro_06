@@ -30,14 +30,3 @@ if --> |no| loose
 loose --> end1
 ```
 
-
-
-
-```mermaid
-flowchart TD;
-開始 --> 終了;
-```
-
-```javascript
-console.log( 'Hello' );
-```
