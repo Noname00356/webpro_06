@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>じゃんけん</title>
+</head>
+<body>
+    <p>あなたはサイコロが<%= your %>を出すと予想した．</p>
+    <p>サイコロは<%= cpu %>を出した．</p>
+    <p>判定：<%= judgement %>．</p>
+    <p>現在<%= total %>回サイコロを振ったところ，<%= correct %>回当たった．<%= nearmiss %>回おしい数字を回答した．</p>
+    <hr>
+    <form action="/dice">
+        <input type="text" name="dice_num" required>
+        <label for="dice_num">サイコロは何が出ると予想する？</label>
+        <input type="hidden" name="correct" value="<%= correct %>">
+        <input type="hidden" name="nearmiss" value="<%= nearmiss %>">
+        <input type="hidden" name="total" value="<%= total %>">
+        <input type="submit" values="じゃんけん　ポン">
+    </form>   
+</body>
+</html>

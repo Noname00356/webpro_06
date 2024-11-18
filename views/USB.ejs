@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>じゃんけん</title>
+</head>
+<body>
+    <p>あなたはUSBの上下を<%= your %>．</p>
+    <p>USBは<%= cpu %>．</p>
+    <p>判定：あなたはUSBを<%= judgement %>．</p>
+    <p>現在<%= total %>回接続を試みたところ，<%= connect %>回挿せた．</p>
+    <hr>
+    <form action="/USB">
+        <input type="text" name="USB" required>
+        <label for="USB">USBを「そのまま挿す」？それとも「逆に挿す」？</label>
+        <input type="hidden" name="connect" value="<%= connect %>">
+        <input type="hidden" name="total" value="<%= total %>">
+        <input type="submit" values="じゃんけん　ポン">
+    </form>   
+</body>
+</html>
