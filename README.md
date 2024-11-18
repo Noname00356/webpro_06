@@ -23,6 +23,18 @@ views/dice.ejs　|　サイコロのテンプレートファイル
 
 #### web上で起動する方法
 1. ```http://localhost:8080/```の後ろにapp.get内の文字を入力する．
+それぞれのURLを以下の表にまとめておく．
+
+app5.js内のプログラム | URL
+-|-
+メッセージを表示1 | http://localhost:8080/hello1
+メッセージを表示2 | http://localhost:8080/hello2
+黒のアップルロゴを表示 | http://localhost:8080/icon
+運試し | http://localhost:8080/luck
+じゃんけん | http://localhost:8080/janken
+USB | http://localhost:8080/USB
+サイコロ | http://localhost:8080/dice
+
 
 ### ```app5.js```内のプログラムについて
 
